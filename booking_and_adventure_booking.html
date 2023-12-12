@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaka Hotel | Bookings</title>
+    <link rel="stylesheet" href="/CSS/style1.css">
+    <script src="/script/script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- background  -->
+    <div class="herobooking">
+
+        <!-- navigation bar -->
+        <nav>
+            <img src="/IMAGE/logo.png" class="logo">
+
+            <ul>
+                <li><a href="/Index.html">HOME</a></li>
+            <li><a href="/branches.html">BRANCHES</a></li>
+            <li><a href="/adventures.html">ADVENTURES</a></li>
+            <li><a href="/restaurants.html">RESTAURANTS</a>
+                <ul class="sub-menu">
+                    <li><a href="/Weddings.html">WEDDINGS</a></li>
+                    <li><a href="/Events.html">MEETINGS</a></li>
+                </ul>
+            </li>
+            <li><a href="/booking_and_adventure_booking.html">BOOKINGS</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="topics">
+            <h1>HOTEL BOOKING & ADVENTURE BOOKING</h1>
+        </div>
+    </div>
+
+    <section class="intro2">
+        <div id="intro1">Unveiling Hospitality: A Journey Into Luxury and Comfort.Book your favourite rooms with
+            exquisite surroundings and amusing views</div>
+    </section>
+
+
+    <!-- hotel booking -->
+
+    <div class="overlay"></div>
+
+    <div class="bookingAndAdventurebooking">
+        <form id="hotelbookingForm">
+
+            <fieldset>
+                <legend>Hotel Booking</legend>
+                <fieldset>
+                    <div> Name:
+                        <p class="firstandlastname">First Name</p>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <p class="firstandlastname">Last Name</p>
+                        <input type="text" name="secondname" id="secondname" required>
+                    </div>
+
+                    <div>Email:
+                        <input type="email" name="Email" id="email" required>
+                    </div>
+
+                    <div>Hotel:
+                        <select name="Location" id="location">
+                            <option value="colombo">Yaka Hotel Colombo</option>
+                            <option value="hikkaduwa">Yaka Hotel Hikkaduwa</option>
+                            <option value="willpattu">Yaka Hotel Willpattu</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+
+
+                <fieldset>
+
+
+
+                    <div>Number of Single Rooms:
+                        <input type="number" min="0" max="10" value="1" id="numberofsinglerooms">
+                    </div>
+                    <div>Number of Double Rooms:
+                        <input type="number" min="0" max="10" value="0" id="numberofdoublerooms">
+                    </div>
+                    <div>Number of Tripple Rooms:
+                        <input type="number" min="0" max="10" value="0" id="numberoftripplerooms">
+                    </div>
+
+                    <div>Extra Bed(s):
+                        <input type="checkbox" name="extrabed" id="extraBed" value="0" id>
+                    </div>
+
+
+
+                    <div>Number of Adults
+                        <input type="number" min="0" max="10" value="0" id="numberofadults" required>
+                    </div>
+
+                    <div>Number of children
+                        <input type="number" min="0" max="10" value="0" id="numberofchildren">
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <div>Arrival Date:
+                        <input type="date" name="arrival" id="arrival">
+                    </div>
+
+                    <div>Depature Date:
+                        <input type="date" name="depature" id="depature" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+
+                    <div>Wifi:
+                        <input type="checkbox" name="wifi" value="0" id="wifi">
+                    </div>
+
+                    <div>
+                        Pool view:
+                        <input type="checkbox" name="view" value="0" id="poolView">
+                    </div>
+                    <div>
+                        Garden view:
+                        <input type="checkbox" name="view" value="0" id="GardenViews">
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset>
+                    Enter Promo Code:
+                    <input type="text" name="promo code" id="promoCode">
+                    <div class="Formbuttons">
+                        <button type="button" id="booknow" onclick="openpopup()">Book Now</button>
+                        <button type="button" id="LoyaltyPoints">Check Loyalty points</button>
+                        <p id="LoyaltyOutput">Loyalty Points : 00.00</p>
+                        <!-- popup msg html -->
+                        <div class="popup" id="popup">
+                            <img src="/IMAGE/tick.png" alt="tick image">
+                            <h2>Thankyou !<br> Your Booking Has been Placed </h2>
+                            <p id="outputtext"></p>
+                            <button type="button" id="ok" onclick="closepopup()">OK</button>
+                            <button type="button" id="addToFavourites">Add To Favourites</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+            </fieldset>
+        </form>
+
+
+        <!-- Adventure Booking  -->
+
+        <form id="adventureBookingForm">
+            <fieldset>
+                <legend>Adventure Details</legend>
+
+                <div>
+                    <label for="adventureType">Adventure Type:</label>
+                    <select name="adventureType" id="adventureType">
+                        <option value="Diving">Diving</option>
+                        <option value="Lotus Tower">Visiting the lotous tower</option>
+                        <option value="Gangaramaya Temple">Visiting the Gangaramaya temple</option>
+                        <option value="Colombo Museum">Visiting Colombo National Meuseum</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Surfing">Surfing</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="duration">Number of Duration (hours):</label>
+                    <input type="number" min="1" max="24" value="1" name="duration" id="duration">
+                </div>
+
+                <div>
+                    <label for="lAdults">Number of Local Adults:</label>
+                    <input type="number" value="1" name="lAdults" id="lAdults">
+                </div>
+                <div>
+                    <label for="lChildren">Number of Local Children:</label>
+                    <input type="number" value="0" name="lChildren" id="lChildren">
+                </div>
+                <div>
+                    <label for="fAdults">Number of Foreign Adults:</label>
+                    <input type="number" value="0" name="fAdults" id="fAdults">
+                </div>
+                <div>
+                    <label for="fChildren">Number of Foreign Children:</label>
+                    <input type="number" value="0" name="fChildren" id="fChildren">
+                </div>
+
+                <div>
+                    Need a Guide:
+                    <input type="checkbox" name="needGuide" id="needGuide" value="0">
+                </div>
+
+                <button type="button" id="booknowAdventure" onclick="openpopupAdventure()">Book Now</button>
+                <!-- popup msg adventure -->
+                <div class="popupAdventure" id="popupAdventure">
+                    <img src="/IMAGE/tick.png" alt="tick image">
+                    <h2>Thankyou !<br> Your Booking Has been Placed </h2>
+                    <p id="outputtextAdventure"></p>
+                    <button type="button" id="okAdventure" onclick="closepopupAdventure()">OK</button>
+
+                </div>
+
+            </fieldset>
+
+
+            </fieldset>
+    </div>
+
+    </form>
+
+    <form id="BookingInfo">
+
+        <!-- Display Booking Information -->
+        <div id="info">
+            <h3>Overall Booking</h3>
+
+            <p id="overallCost">Overall Cost: RS0.00</p>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+
+
+<!-- footer -->
+<footer>
+
+    <div class="footerhead">
+        <img src="/IMAGE/logo.png" alt="logo" id="footerlogo">
+        <h1>YAKA HOTEL</h1>
+
+    </div>
+    <ul>
+        <li><a href="/Index.html">HOME</a></li>
+        <li><a href="/branches.html">BRANCHES</a></li>
+        <li><a href="/adventures.html">ADVENTURES</a></li>
+        <li><a href="/restaurants.html">RESTAURANTS</a></li>
+        <li><a href="/booking_and_adventure_booking.html">BOOKING AND ADVENTURE BOOKING</a></li>
+    </ul>
+
+
+
+    </div>
+</footer>
+
+</html>

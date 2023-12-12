@@ -1,0 +1,386 @@
+/* EVENT 1 (weddings) */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* weddings hero img */
+
+.herowedding{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(85, 36, 73, 0.6)), url(/IMAGE/wedding.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    
+
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    opacity: 0.1;
+}
+
+
+nav ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #202020; 
+    opacity: 0.9;
+    padding: 10px;
+   
+}
+
+nav ul li:hover ul.sub-menu {
+    display: block;
+}
+
+nav ul li ul.sub-menu li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul.sub-menu li a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+.topics{
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+
+
+}
+
+
+
+/* new navigation */
+
+.newnav {
+    background-image: linear-gradient(90deg, rgb(248, 181, 192), rgb(36, 10, 10));
+    padding: 10px; 
+   
+}
+
+.newnav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.newnav ul li {
+    list-style: none;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    background-color: rgba(85, 36, 73, 0.6);
+    transition: background-color 0.3s; 
+}
+
+.newnav ul li:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.newnav ul li:active {
+    background-color: rgb(31, 31, 31);
+}
+
+.newnav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px; 
+}
+
+
+
+.intro{
+    font-size: 30px; 
+    padding: 90px;
+    margin-top: 30px;
+    margin: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, rgb(248, 181, 192),rgb(36, 10, 10));
+
+
+}
+
+
+
+
+
+
+.locationsmeeting p{
+    font-family: fantasy;
+    font-size: 40px;
+   margin: 30px;
+   padding: 10px;
+}
+
+
+.colomboadventures{
+  
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ 
+ .card{
+    background-image: linear-gradient(10deg, rgb(248, 181, 192),rgb(36, 10, 10));
+     width:450px;
+     margin: 20px;
+     height: 600px;
+     transition:  0.3s ease-in-out;
+ }
+ 
+ .adventureimg{
+     background-color: rgb(184, 201, 216);
+     height: 300px;
+     margin-bottom: 15px;
+     background-size: cover;
+ }
+ 
+ .img-1{
+     background-image: url(/IMAGE/wedding1.webp);
+ 
+ }
+ .img-2{
+     background-image: url(/IMAGE/wedding\ 2.webp)
+ 
+ }
+ .img-3{
+     background-image: url(/IMAGE/wedding\ 3.webp);
+ 
+ }
+
+ .card:hover{
+    transform: translateX(10px);
+}
+
+
+.card h2,p{
+    margin: 30px;
+    text-align: center;
+}
+
+
+.intro button{
+    width: 150px;
+    height: 60px;
+    font-size: 28px;
+    border-radius: 10px;
+    margin: 30px;
+    cursor: pointer;
+    background-color: rgb(160, 102, 102);
+    color: white;
+}
+
+
+@media (max-width: 2834px) {
+    .herowedding {
+        background-size: cover; 
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .herowedding {
+      height: 50vh;
+    }
+}
+
+
+@media (max-width: 912px) {
+    nav {
+        padding: 5px 5%; 
+    }
+
+    .logo {
+        width: 40px; 
+    }
+
+    nav ul li {
+        margin-left: 5px; 
+    }
+
+    nav ul li a {
+        font-size: 8px; 
+    }
+
+    .intro {
+        font-size: 15px; 
+        padding: 20px; 
+        margin: 10px; 
+    }
+
+    .newnav ul li {
+        padding: 8px 10px;
+        font-size: 20px;
+    }
+
+    
+
+    .topics{
+            font-size: 20px;
+        }
+
+    .card p {
+        font-size: 13px;
+    }
+
+
+    footer {
+        padding: 40px;
+    }
+   #footerlogo{
+    width:40px
+   }
+
+
+    .footerhead h1 {
+        left: 0;
+        top: 0;
+        font-size: 22px;
+    }
+
+    .footerhead {
+        top: 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        font-size:10px ;
+    }
+
+    .icons {
+        top: 0;
+    }
+
+    .socials,
+    .icons a i{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 80px;
+    color: #fff;
+    background-color: rgb(117, 114, 114);
+    background-image: linear-gradient(180deg, grey, black);
+    text-align: center; 
+}
+
+
+.footerhead {
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerhead h1 {
+    position: relative;
+    left: 50px;
+    top: 25px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+footer ul li {
+    margin: 10px; 
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footerlogo {
+    width: 80px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.icons {
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px;
+    position: relative;
+    top: -10px;
+    text-align: center; 
+}
+
+.icons a i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 0; 
+}

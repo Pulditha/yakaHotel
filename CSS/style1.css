@@ -1,0 +1,1484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.herovid{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    
+
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    opacity: 0.1;
+}
+
+
+nav ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #202020; 
+    opacity: 0.9;
+    padding: 10px;
+   
+}
+
+nav ul li:hover ul.sub-menu {
+    display: block;
+    transition: 1s;
+}
+
+nav ul li ul.sub-menu li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul.sub-menu li a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.content{
+    text-align: center;
+
+}
+
+
+
+
+
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+
+
+.bgvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    
+}
+
+
+/*  background video responsive */
+@media(min-aspect-ratio:16/9){
+    .bgvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .bgvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
+.intro{
+    font-size: 30px; 
+    padding: 90px;
+    margin-top: 30px;
+    margin: 30px;
+    background-color: rgb(224, 219, 219);
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg,white,rgb(224, 219, 219));
+
+
+}
+
+
+
+
+/* subsection 1 and 3 - homepage*/
+
+
+.subsections1 {
+    background-color: rgb(156, 124, 132);
+    margin: 30px;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    color: black;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.subsections1:hover {
+    transform: translateX(10px);
+}
+
+.subsections1 h1 {
+    font-style: italic;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.subsections1 section {
+    text-align: center;
+}
+
+.subsections1 p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; 
+}
+
+#imgsub1 {
+    width: 100%; 
+    max-width: 750px; 
+    display: block; 
+    margin: 0 auto;
+}
+#imgsub2 {
+    width: 100%; 
+    max-width: 750px; 
+    display: block; 
+    margin: 0 auto;
+}#imgsub3 {
+    width: 100%; 
+    max-width: 750px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.centered-list {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.centered-list ol {
+    
+    padding-left: 0; 
+}
+
+.centered-list li {
+    margin: 10px;
+    text-align: center; 
+}
+/* subsection 2-homepage */
+
+.subsections2 {
+    background-color: rgb(156, 126, 102);
+    margin: 30px;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    color: black;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.subsections2:hover {
+    transform: translateX(10px);
+}
+
+.subsections2 h1 {
+    font-style: italic;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.subsections2 section {
+    text-align: center;
+}
+
+.subsections2 p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; 
+}
+
+#imgsub {
+    width: 100%; 
+    max-width: 750px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.room-list {
+    list-style-type: disc; 
+    padding: 0;
+    text-align: center; 
+}
+
+.room-list li {
+    margin: 10px;
+}
+
+/* branches page */
+
+
+
+.herobranches{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/IMAGE/branches.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 2834px) {
+    .herobranches {
+        background-size: cover; 
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .herobranches {
+      height: 50vh;
+    }
+
+ 
+ 
+  
+}
+
+
+
+.intro2{
+    font-size: 30px; 
+    padding: 60px;
+    margin: 30px;
+    background-color: rgb(214, 203, 203);
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg,rgb(233, 233, 233),rgb(223, 223, 223));
+
+
+    
+}
+
+.topics{
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+
+/* andventures hero img */
+
+.heroadventure{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/IMAGE/adventures.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 2834px) {
+    .heroadventure {
+        background-size: cover; 
+        padding: 0 10px;
+    }
+    
+
+}
+
+@media (max-width: 800px) {
+    .heroadventure {
+      height: 50vh;
+    }
+  
+}
+
+
+
+/* restaurant hero img */
+
+.herorestaurant{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/IMAGE/restaurants.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 2834px) {
+    .herorestaurant {
+        background-size: cover; 
+        padding: 0 10px;
+    }
+}
+@media (max-width: 800px) {
+    .herorestaurant {
+      height: 50vh;
+    }
+  
+}
+
+/* booking and hero img*/
+.herobooking{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/IMAGE/bookings.webp);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 2834px) {
+    .herobooking {
+        background-size: cover; 
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .herobooking {
+      height: 50vh;
+    }
+  
+}
+
+
+/* footer */
+
+footer {
+    margin: 0;
+    padding: 80px;
+    color: #fff;
+    background-color: rgb(117, 114, 114);
+    background-image: linear-gradient(180deg, grey, black);
+    text-align: center; 
+}
+
+
+.footerhead {
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerhead h1 {
+    position: relative;
+    left: 50px;
+    top: 25px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+footer ul li {
+    margin: 10px; 
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footerlogo {
+    width: 80px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.icons {
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px;
+    position: relative;
+    top: -10px;
+    text-align: center; 
+}
+
+.icons a i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 0; 
+}
+
+/* branches page hotels */
+/* 1 */
+.hotelcol{
+    background-color: rgb(156, 124, 132);
+    margin: 30px;
+    padding: 30px;
+}
+
+.hotelcol h1{
+   
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.hotelcol section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotelcol p{
+    margin-left: auto;
+}
+
+.hotelcol figure{
+    margin: 50px;
+}
+
+#hotelcol{
+    width: 600px;
+    height: 300px;
+    border-top-right-radius: 10px;
+
+   
+}
+.hotelcol iframe{
+
+
+    text-align: center;
+    
+}
+
+
+/* 2 */
+.hotelhik{
+    background-color: rgb(156, 148, 124);
+    margin: 30px;
+    padding: 30px;
+}
+
+.hotelhik h1{
+   
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.hotelhik section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotelhik p{
+    margin-left: 50px;
+}
+
+.hotelhik figure{
+    margin: 50px;
+}
+
+#hotelhik{
+    width: 650px;
+    height: 350px;
+    border-top-right-radius: 10px;
+
+   
+}
+
+/* 3 */
+.hotelwill{
+    background-color: rgb(147, 165, 147);
+    margin: 30px;
+    padding: 30px;
+}
+
+.hotelwill h1{
+   
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.hotelwill section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotelwill p{
+    margin-left: 50px;
+}
+
+.hotelwill figure{
+    margin: 50px;
+}
+
+#hotelwill{
+    width: 600px;
+    height: 300px; 
+    border-top-right-radius: 10px;
+
+   
+}
+
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+   
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+
+/* adventures page */
+
+.adventures{
+text-align: center;
+
+
+}
+
+.adventures p{
+    font-size: 60px;
+    margin-bottom: 30px ;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+.colomboadventures{
+  
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(218, 216, 216);
+    width:450px;
+    margin: 20px;
+    height: 500px;
+}
+
+.adventureimg{
+    background-color: rgb(184, 201, 216);
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.img-1{
+    background-image: url(/IMAGE/Gangaramaya\ temple.jpg);
+
+}
+.img-2{
+    background-image: url(/IMAGE/col\ national\ museum.jpg)
+
+}
+.img-3{
+    background-image: url(/IMAGE/Lotus\ tower.webp);
+
+}
+.img-4{
+    background-image: url(/IMAGE/Hikkaduwa\ scuba\ diving.jpg);
+
+}
+.img-5{
+    background-image: url(/IMAGE/hikkaduwa\ beach.jpg);
+
+}
+.img-6{
+    background-image: url(/IMAGE/Surfing-Hikkaduwa.webp);
+
+}
+.img-7{
+    background-image: url(/IMAGE/wilpattu\ national\ park.webp);
+
+}
+.img-8{
+    background-image: url(/IMAGE/willpttu\ waterfall.jpg);
+
+}
+.img-9{
+    background-image: url(/IMAGE/wilpattu\ park.jpg);
+
+}
+
+
+
+.card:hover{
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+}
+
+
+.card h2,p{
+    margin: 30px;
+    text-align: center;
+}
+
+.adventuremap{
+    margin: 30px;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+/* restaurants page */
+.restaurants{
+    background-color: rgb(206, 161, 176);
+    margin: 30px;
+    padding: 30px;
+    transition:  0.3s ease-in-out;
+    color: black;
+    border-radius: 10px;
+}
+
+.restaurants:hover{
+    transform: translateY(-10px);
+}
+.restaurants h1{
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+   
+}
+.restaurants section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.restaurants p{
+   margin-left: 50px;
+}
+
+.restaurants button{
+    display: flex;
+    background-color: rgb(30,30,30);
+    color: white;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+button:hover{
+    transform: scale(1.03);
+}
+#imgsub{
+    width: 500px;
+}
+
+
+.restaurants2{
+    background-color: rgb(156, 126, 102);
+    margin: 30px;
+    padding: 30px;
+    transition:  0.3s ease-in-out;
+    color: black;
+    border-radius:10px ;
+    
+    
+
+}
+.restaurants2:hover{
+    transform: translateY(-10px);
+    
+}
+
+.restaurants2 h1{
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.restaurants2 section{
+    display: flex;
+    
+    
+    
+}
+.restaurants2 button{
+    display: flex;
+    background-color: rgb(30,30,30);
+    color: white;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.restaurants2 p{
+   margin-left: 50px;
+}
+
+.checkmenue{
+    font-size: 18px;
+}
+
+
+
+.weddings{
+    background-color: rgb(218, 216, 216);
+    margin: 30px;
+    padding: 30px;
+    
+}
+.meetings{
+    background-color: rgb(218, 216, 216);
+    margin: 30px;
+    padding: 30px;
+    
+}
+
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.events img{
+    width: 500px;
+    
+}
+
+.event-buttons{
+ display: flex;
+ justify-content: center;
+ border-radius: 10px;
+ 
+}
+.event-buttons button{
+    padding: 15px;
+}
+
+.event-buttons span{
+    font-family: fantasy;
+    font-size: 20px;
+
+}
+
+
+
+
+
+/* booking page */
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.firstandlastname{
+    text-align: left;
+    margin: 5px;
+    font-size: 13px;
+    color: #818181;
+}
+.Formbuttons p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 50px ; 
+    font-size: large;
+    font-weight: 400;
+    
+}
+
+/* pop up msg css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    visibility: hidden;
+}
+
+.open-overlay {
+    visibility: visible;
+}
+
+.popup{
+    margin: 0;
+    padding: 0 20px 20px;
+    
+    background: rgb(242, 242, 242);
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+    visibility: hidden;
+
+
+}
+
+.open-popup{
+    visibility: visible;
+}
+.popup img{
+    width: 80px;
+    margin-top:10px ;
+}
+
+.popup h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+}
+
+.popup  button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.popup p {
+    text-align: left;
+}
+
+/* popup for adventure */
+.popupAdventure{
+    margin: 0;
+    padding: 0 30px 30px;
+    width: 400px;
+    background: rgb(242, 242, 242);
+    border-radius: 6px;
+    position: absolute;
+    top: 375%;
+ left: 35%;
+    text-align: center;
+    z-index: 2;
+    visibility: hidden;
+
+
+}
+
+.popupAdventure-open{
+    visibility: visible;
+}
+.popupAdventure img{
+    width: 100px;
+    margin-top:10px ;
+}
+
+.popupAdventure h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+}
+
+.popupAdventure  button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.popupAdventure p {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .popup {
+        padding: 0 10px 10px; 
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .popupAdventure {
+        width: 95%;
+        left: 8px; 
+
+   
+    .popupAdventure h2 {
+        font-size: 28px;
+    }
+
+    .popupAdventure button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+}
+}
+
+
+
+
+
+/* homepage */
+
+
+
+@media (max-width: 912px) {
+    nav {
+        padding: 5px 5%; 
+    }
+
+    .logo {
+        width: 40px; 
+    }
+
+    nav ul li {
+        margin-left: 5px; 
+    }
+
+    nav ul li a {
+        font-size: 8px; 
+    }
+}
+
+@media (max-width: 500px){
+.herovid{
+    height: 50vh;
+}
+}
+
+@media (max-width: 800px) {
+
+    .herovid{
+       
+        width: auto;
+    }
+
+    .content h1 {
+        font-size: 60px; 
+    }
+
+    .content a {
+        font-size: 18px; 
+        padding: 10px 30px; 
+        margin-top: 10px; 
+    }
+
+    .intro {
+        font-size: 15px; 
+        padding: 20px; 
+        margin: 10px; 
+    }
+
+    .subsections1 {
+        margin: 15px; 
+        padding: 15px;
+    }
+
+    .subsections1 h1 {
+        font-size: 20px; 
+    }
+    .subsections2 h1{
+        font-size: 20px;
+    }
+
+
+    .subsections1 ul li {
+        margin: 15px; 
+    }
+
+    #imgsub{
+        height: auto;
+        width: 75%;
+    }
+    .subsections2 {
+        margin: 15px; 
+        padding: 15px;
+    }
+
+    .subsections2 h1 {
+        font-size: 20px; 
+    }
+    .subsections2 p{
+        font-size: 15px;
+    }
+    .subsections1 p{
+        font-size: 15px;
+    }
+ 
+
+
+    .subsections2 ul li {
+        margin: 15px; 
+    }
+    
+    footer {
+        padding: 40px;
+    }
+   #footerlogo{
+    width:40px
+   }
+
+
+    .footerhead h1 {
+        left: 0;
+        top: 0;
+        font-size: 22px;
+    }
+
+    .footerhead {
+        top: 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        font-size:10px ;
+    }
+
+    .icons {
+        top: 0;
+    }
+
+    .socials,
+    .icons a i{
+        font-size: 15px;
+    }
+    
+
+
+
+}
+/* branches page */
+
+
+@media (max-width: 800px) {
+
+    
+.intro2{
+    font-size: 15px; 
+        padding: 20px; 
+        margin: 10px; 
+}
+}
+
+@media (max-width: 1291px) {
+    .hotelcol {
+        margin: 15px; 
+        padding: 15px;
+    }
+
+    .hotelcol h1 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .hotelcol section {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .hotelcol p {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .hotelcol figure {
+        margin: 20px 0; 
+    }
+    .hotelcol iframe{
+        width: 100%;
+        height: auto;
+    }
+
+    #hotelcol {
+        width: 100%; 
+        height: auto; 
+        border-top-right-radius: 0; 
+    }
+    /* 2 */
+
+    .hotelhik {
+        margin: 15px; 
+        padding: 15px;
+    }
+
+    .hotelhik h1 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .hotelhik section {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .hotelhik p {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .hotelhik figure {
+        margin: 20px 0;
+      
+    }
+    .hotelhik iframe{
+        width: 100%;
+        height: auto;
+    }
+
+    #hotelhik {
+        width: 100%; 
+        height: auto; 
+        border-top-right-radius: 0; 
+    }
+    /* 3 */
+
+    .hotelwill {
+        margin: 15px; 
+        padding: 15px;
+    }
+
+    .hotelwill h1 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .hotelwill section {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .hotelwill p {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .hotelwill figure {
+        margin: 20px 0; 
+    }
+    .hotelwill iframe{
+        width: 100%;
+        height: auto;
+    }
+
+    #hotelwill {
+        width: 100%; 
+        height: auto; 
+        border-top-right-radius: 0; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    table {
+        overflow-x: auto; 
+    }
+
+    th, td {
+        white-space: nowrap; 
+    }
+
+  
+    th, td {
+        font-size: 8px;
+        padding: 3px;
+    }
+}
+
+
+/* adventures page */
+
+@media (max-width: 800px){
+    .topics{
+        font-size: 20px;
+    }
+    .adventures p{
+        font-size: 25px;
+    }
+    .adventures h1{
+        font-size: 15px;
+    }
+
+    .colomboadventures {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 100%; 
+        max-width: 350px; 
+        margin: 10px 0; 
+        height: 400px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+
+    .adventureimg {
+        height: 200px; 
+    }
+
+    .card h2, .card p {
+        margin: 15px; 
+        font-size: 18px; 
+    }
+
+    .adventuremap {
+        margin-top: 20px; 
+    }
+}
+
+
+
+/* restaurant page */
+
+
+@media (max-width: 840px) {
+    .restaurants,
+    .restaurants2,
+    .weddings,
+    .meetings {
+        margin: 15px; 
+        padding: 15px; 
+    }
+
+    .restaurants h1,
+    .restaurants2 h1 {
+        font-size: 20px; 
+    }
+
+    .restaurants section,
+    .restaurants2 section {
+        flex-direction: column;
+    }
+
+    .restaurants p,
+    .restaurants2 p {
+        margin-left: 0; 
+        text-align: center; 
+        font-size: 15px;
+    }
+
+    .restaurants button,
+    .restaurants2 button {
+        height: 50px; 
+        width: 140px; 
+        font-size: 10px; 
+    }
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .weddings,
+    .meetings {
+        margin: 15px; 
+        padding: 15px; 
+    }
+
+    .weddings h1,
+    .meetings h1 {
+        font-size: 20px; 
+    }
+
+    .events {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .events img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+    }
+
+    .event-buttons {
+        margin-top: 20px; 
+    }
+
+   .event-buttons span {
+        font-size: 10px; 
+    }
+}
+
+
+
+
+
+/* booking */
